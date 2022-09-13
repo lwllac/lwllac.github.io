@@ -134,7 +134,7 @@ class UnsupportedOS(Exception):
 class Darknet:
 
     def __init__(self):
-        self.logo = """
+        self.logo = r"""
             ___           _               _
            /   \__ _ _ __| | ___ __   ___| |_
           / /\ / _` | '__| |/ / '_ \ / _ \ __|
