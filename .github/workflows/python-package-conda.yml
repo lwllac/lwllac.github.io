@@ -10,10 +10,10 @@ jobs:
       max-parallel: 5
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 22.2.2
+    - name: Set up Python 3.11.0-rc.2
       uses: actions/setup-python@v3
       with:
-        python-version: 22.2.2
+        python-version: 3.11.0-rc.2
     - name: Add conda to system path
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
