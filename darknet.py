@@ -346,7 +346,6 @@ class Darknet:
         -------
             str = IP Address
         """
-
         if self.__has_internet_connection and self.has_tor:
             return "Tor is enabled\n {}".format(
                 subprocess.getoutput(
@@ -382,7 +381,6 @@ class Darknet:
         -------
             str = IPTables Commands
         """
-
         return """
         {ipt_loc} -F
         {ipt_loc} -t nat -F
