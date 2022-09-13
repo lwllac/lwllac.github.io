@@ -3,11 +3,11 @@ name: Python Package using Conda
 on: [push]
 
 jobs:
+          :pip install --upgrade pip
   build-linux:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 22.2.2
