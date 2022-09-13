@@ -605,9 +605,8 @@ class Darknet:
         -------
             None
         """
-        with open("/etc/tor/torrc.orig") as ot:
-            with open("/etc/tor/torrc", "w") as nt:
-                nt.write(ot.read())
+        with open("/etc/tor/torrc.orig") as ot, open("/etc/tor/torrc", "w") as nt:
+            nt.write(ot.read())
 
     @property
     def __resolv_config(self) -> None:
