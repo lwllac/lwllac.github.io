@@ -1,42 +1,35 @@
-<html>
-	<head>
-		<title>You are an Idiot! (dot cc)</title>
 
-		<meta name="Author" content="The ADR and Jazzy (After 2020 - Endermanch)">
-		<meta name="Keywords" content="you are an idiot, you, are, an, idiot, fool, youdontknowwhoiam.org, youdontknowwhoiam, you dont know who i am, you, dont, know, who, i, am, org, dot, aregner, jazzy, adr">
-		<meta name="Description" content="This is the orgional and the best flash video on the 'net.  Once found on www.youdontknowwhoiam.org, not found where it belong, right here on www.youareanidiot.org.">
-		
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="You are an idiot! (dot cc)">
-		<meta property="og:description" content="This is a new malicious iteration of the legendary website.">
-		<meta property="og:url" content="https://malwat.ch/">
-		<meta property="og:image" content="http://youareanidiot.cc/images/idiot.png">
-		<meta property="og:image:secure_url" content="https://youareanidiot.cc/images/idiot.png">
-		<meta property="og:image:width" content="256">
-		<meta property="og:image:height" content="256">
-		<meta property="og:image:alt" content="Idiot!">
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>New Tab</title>
+    <style>
+      body {
+        background: #353535;
+        margin: 0;
+      }
 
-		<link rel="stylesheet" href="/styles/styles.css">
-		<script src="/scripts/you.js"></script>
-	</head>
+      #backgroundImage {
+        border: none;
+        height: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+      }
 
-	<body>
-		<div class="idiot-container">
-			<div class="info-container">
-				<img class="speaker" id="youare-micon" src="/images/speakerm.png">
-				
-				<div class="links">
-					<a class="link" href="https://youtu.be/ZcwxToKjJhE">about</a>
-					<a class="link" href="https://fl.youareanidiot.cc/">flash</a>
-				</div>
-			</div>
-			
-			<video src="/media/youare.mp4" type="video/mp4" id="youare-video" muted autoplay loop/>
-		</div>	
-	
-		<audio id="youare-audio" loop hidden>
-			<source src="/media/youare.mp3" type="audio/mp3">
-		</audio>
-	</body>
+      [show-background-image] #backgroundImage {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="backgroundImage" src=""></iframe>
+    <ntp-app></ntp-app>
+    <script type="module" src="new_tab_page.js"></script>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+    <link rel="stylesheet" href="shared_vars.css">
+  </body>
 </html>
-<!doctype html><html itemscope="" itemtype="http://schema.org/SearchResultsPage" lang="en"><head><meta charset="UTF-8"><meta content="dark" name="color-scheme"><meta content="origin" name="referrer"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>j - Google Search</title>
